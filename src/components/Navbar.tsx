@@ -3,6 +3,7 @@
 import { useScrollBlock } from "@/hooks/useLockScroll";
 import { cn } from "@/lib/utils"
 import { IBM_Plex_Serif } from "next/font/google"
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from 'react-responsive'
 
@@ -12,7 +13,24 @@ const IBMPlexSerif = IBM_Plex_Serif({
     style: "italic"
 })
 
-const nav_links = ["Projects", "Tech Stack", "Resume", "Connect"];
+const nav_links = [
+    {
+        name: "Projects",
+        to: "/projects"
+    },
+    {
+        name: "Tech Stack",
+        to: "/stack"
+    },
+    {
+        name: "Resume",
+        to: "/resume"
+    },
+    {
+        name: "Connect",
+        to: "/connect"
+    },
+];
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false);
@@ -39,10 +57,12 @@ export default function Navbar() {
             <header className="border-b w-full h-[60px] tracking-tighter">
                 <nav className="max-w-[800px] w-full mx-auto flex items-center justify-between h-full px-6 md:px-0">
                     <div className="flex gap-4 items-center h-full text-[15px] ">
-                        <h1 className={`${cn(IBMPlexSerif.className)} font-medium`}>Yash Kamble .</h1>
+                        <a href="/" className="">
+                            <h1 className={`${cn(IBMPlexSerif.className)} font-medium`}>Yash Kamble .</h1>
+                        </a>
                         <ul className="hidden md:flex items-center gap-4 leading-3 pt-0.5 text-[#9ca3af]">
-                            {nav_links.map((link) => (
-                                <li key={link}>{link}</li>
+                            {nav_links.map(({name , to}) => (
+                                <Link href={to} key={name.toLowerCase()} className="cursor-pointer hover:text-[#1f2937] transition-colors">{name}</Link>
                             ))}
                         </ul>
                     </div>
