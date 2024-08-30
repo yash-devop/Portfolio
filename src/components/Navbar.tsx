@@ -2,12 +2,12 @@
 
 import { useScrollBlock } from "@/hooks/useLockScroll";
 import { cn } from "@/lib/utils"
-import { LightbulbOff, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
 import { IBM_Plex_Serif } from "next/font/google"
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from 'react-responsive'
-
+import ThemeSwitch from "./ThemeSwitch";
 const IBMPlexSerif = IBM_Plex_Serif({
     subsets: ["latin"],
     weight: ["500"],
@@ -40,9 +40,9 @@ export default function Navbar() {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1224px)'
     });
-
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
+    
     useEffect(() => {
         if (isDesktopOrLaptop) {
             allowScroll();
@@ -62,15 +62,15 @@ export default function Navbar() {
                             <h1 className={`${cn(IBMPlexSerif.className)} font-medium`}>Yash Kamble .</h1>
                         </a>
                         <ul className="hidden md:flex items-center gap-4 leading-3 pt-0.5 text-[#9ca3af]">
-                            {nav_links.map(({name , to}) => (
+                            {nav_links.map(({ name, to }) => (
                                 <Link href={to} key={name.toLowerCase()} className="cursor-pointer hover:text-[#1f2937] transition-colors">{name}</Link>
                             ))}
                         </ul>
                     </div>
                     <div className="flex items-center gap-2">
-                        <div className="rounded-full hover:bg-gray-100 p-1.5 cursor-pointer">
-                            <Sun size={18} />
-                        </div>
+            <ThemeSwitch />
+
+                        
                         <div className="hidden md:block">
                             <AvailableToWork />
                         </div>
