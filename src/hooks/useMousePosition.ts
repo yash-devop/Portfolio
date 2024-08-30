@@ -2,7 +2,7 @@ import { RefObject, useEffect, useState } from "react"
 
 
 
-const useMousePosition = (containerRef: RefObject<HTMLDivElement>, maxXOffset: number, maxYOffset: number) => {
+const useMousePosition = <T extends HTMLElement>(containerRef: RefObject<T>, maxXOffset: number, maxYOffset: number) => {
   const [mousePosition, setMousePosition] = useState<{ x: number; y: number } | null>({
     x: 0,
     y: 0
