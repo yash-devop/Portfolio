@@ -2,6 +2,7 @@
 
 import { useScrollBlock } from "@/hooks/useLockScroll";
 import { cn } from "@/lib/utils"
+import { LightbulbOff, Sun } from "lucide-react";
 import { IBM_Plex_Serif } from "next/font/google"
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -66,8 +67,13 @@ export default function Navbar() {
                             ))}
                         </ul>
                     </div>
-                    <div className="hidden md:block">
-                        <AvailableToWork />
+                    <div className="flex items-center gap-2">
+                        <div className="rounded-full hover:bg-gray-100 p-1.5 cursor-pointer">
+                            <Sun size={18} />
+                        </div>
+                        <div className="hidden md:block">
+                            <AvailableToWork />
+                        </div>
                     </div>
                     <div className="flex md:hidden items-center gap-3">
                         <div className="block sm:block md:hidden">
