@@ -14,4 +14,11 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+};
+
+body{       /* dont remove this line , idk why but adding this will run the below dark color*/
+    
+}
+[data-theme="dark"] {
+    @apply bg-[#0F0F0F]
 }
