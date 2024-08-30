@@ -5,31 +5,15 @@ import { Play } from "lucide-react"
 import { useRef, useState } from "react"
 
 export default function ShowcaseCard() {
-    // const [mousePosition, setMousePosition] = useMousePosition();
-    const [mousePosition, setMousePosition] = useState<{ x: number, y: number } | null>(null)
     const containerRef = useRef<HTMLDivElement>(null)
+    const mousePosition = useMousePosition(containerRef,500,300)
     const [display, setDisplay] = useState<string>("none")
 
-    const handleMouseMove = (e: MouseEvent) => {
-        const rect = containerRef.current?.getBoundingClientRect()
-        if (rect) {
-            console.log('rect wid hi',rect.width,rect.height);          // 800 and 500 fixed !
-            const maxX = rect.width + 50                                // 850 
-            const maxY = rect.height + 50                               // 550
-
-            setMousePosition({
-                x: Math.max(30, Math.min(e.clientX - rect.left + 40, maxX)),        
-                y: Math.max(30, Math.min(e.clientY - rect.top + 40, maxY)) 
-            })
-        }
-    }
-    
 
     return (
         <div 
             ref={containerRef} 
             className="w-full h-[500px] bg-gray-100 relative overflow-hiddens cursor-pointer flex items-center justify-center"
-            onMouseMove={handleMouseMove}
             onMouseLeave={() => setDisplay("none")}
             onMouseEnter={() => setDisplay("block")}
         >
