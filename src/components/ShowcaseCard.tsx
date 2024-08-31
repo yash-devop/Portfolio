@@ -19,7 +19,7 @@ export default function ShowcaseCard() {
             onMouseLeave={() => setDisplay("none")}
             onMouseEnter={() => setDisplay("block")}
         >
-                <Link href={"/newroute"}>    
+            <Link href={"/newroute"}>
                 <Image
                     alt="project1"
                     src={"/assets/project1.png"}
@@ -41,13 +41,13 @@ export default function ShowcaseCard() {
 
                         <div className="flex items-center justify-center gap-2">
                             <div className="p-1 rounded-full border-2 w-fit">
-                                <Play size={12} className="text-[#9ca3af]" />
+                                <Play size={12} className="text-black" />
                             </div>
-                            <span className="text-[#9ca3af] text-[16px] pr-1">Check it out </span>
+                            <span className="text-black text-[16px] pr-1">Check it out </span>
                         </div>
                     </div>
                 )}
-                </Link>
+            </Link>
         </div>
     )
 }

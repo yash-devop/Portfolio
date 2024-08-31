@@ -61,9 +61,9 @@ export default function Navbar() {
                         <a href="/" className="">
                             <h1 className={`${cn(IBMPlexSerif.className)} font-medium`}>Yash Kamble .</h1>
                         </a>
-                        <ul className="hidden md:flex items-center gap-4 leading-3 pt-0.5 text-[#9ca3af]">
+                        <ul className="hidden md:flex items-center gap-4 leading-3 pt-0.5 ">
                             {nav_links.map(({ name, to }) => (
-                                <Link href={to} key={name.toLowerCase()} className="cursor-pointer hover:text-[#1f2937] transition-colors">{name}</Link>
+                                <Link href={to} key={name.toLowerCase()} className="cursor-pointer transition-colors">{name}</Link>
                             ))}
                         </ul>
                     </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
 
 function AvailableToWork() {
     return (
-        <div className="w-fit px-2 py-0.5 rounded-full border border-[#F0F0F0] text-[#9ca3af] flex items-center gap-1">
+        <div className="w-fit px-2 py-0.5 rounded-full border border-[#F0F0F0] flex items-center gap-1">
             <div className="bg-green-500 rounded-full size-2 animate-pulse" />
             <span className="text-[12px]">Available for work</span>
         </div>
