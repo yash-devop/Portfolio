@@ -36,7 +36,7 @@ export default function ThemeSwitch() {
             )}>
                 {
                     theme === "light" ? (
-                        <Moon />
+                        <Moon size={18}/>
                     ) : (
                         <Sun size={18} />
                     )
