@@ -70,5 +70,19 @@ export const ResumeDetails = [
         company: "Indian Institute of Technology, Bombay · Internship",
         description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
     },
+    {
+        duration: "Dec. 2023",
+        logo: "/assets/icons/slack.svg",
+        title : "Frontend Developer",
+        company: "Hackoverflow · Hackathon",
+        description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
+    },
+    {
+        duration: "Nov. 2023",
+        logo: "/assets/icons/deepblue_ico.svg",
+        title : "Frontend Developer",
+        company: "Project Deep Blue S23 · Hackathon",
+        description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
+    },
 
 ]
