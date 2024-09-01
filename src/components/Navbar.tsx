@@ -20,10 +20,6 @@ const nav_links = [
         to: "/projects"
     },
     {
-        name: "Tech Stack",
-        to: "/stack"
-    },
-    {
         name: "Resume",
         to: "/resume"
     },
