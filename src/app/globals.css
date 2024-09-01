@@ -26,7 +26,7 @@ body{       /* dont remove this line , idk why but adding this will run the belo
 ::view-transition-group(root) {
     animation-duration: 0.7s;
     animation-timing-function: var(--expo-out);
-  }
+  } 
         
   ::view-transition-new(root) {
     animation-name: reveal-light;

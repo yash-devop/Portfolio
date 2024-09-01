@@ -12,6 +12,69 @@ const IBMPlexSerif = IBM_Plex_Serif({
   style: "italic"
 })
 
+const Skills = [
+  {
+     name: "Next JS",
+     icon: "/assets/icons/nextjs_ico.svg"
+  },
+  {
+     name: "React JS",
+     icon: "/assets/icons/react_ico.svg"
+  },
+  {
+     name: "Typescript",
+     icon: "/assets/icons/typescript_ico.svg"
+  },
+  {
+     name: "Prisma ORM",
+     icon: "/assets/icons/prisma_ico.svg"
+  },
+  {
+     name: "Javascript",
+     icon: "/assets/icons/javascript_ico.svg"
+  },
+  {
+     name: "Tailwind CSS",
+     icon: "/assets/icons/tailwind_ico.svg"
+  },
+  {
+     name: "Node JS",
+     icon: "/assets/icons/node_ico.svg"
+  },
+  {
+     name: "React Query",
+     icon: "/assets/icons/reactquery_ico.svg"
+  },
+  {
+     name: "Redis",
+     icon: "/assets/icons/redis_ico.svg"
+  },
+  {
+     name: "Redux Toolkit",
+     icon: "/assets/icons/redux_ico.svg"
+  },
+  {
+     name: "Postgres SQL",
+     icon: "/assets/icons/postgres_ico.svg"
+  },
+  {
+     name: "Mongo DB",
+     icon: "/assets/icons/mongo_ico.svg"
+  },
+  {
+     name: "Docker",
+     icon: "/assets/icons/docker_ico.svg"
+  },
+  {
+     name: "Figma",
+     icon: "/assets/icons/figma_ico.svg"
+  },
+  {
+     name: "AWS",
+     icon: "/assets/icons/aws_ico.svg"
+  },
+]
+
 export default function Home() {
   return (
     <>
@@ -33,21 +96,11 @@ export default function Home() {
           <ArrowUpRight size={20} className="pb-2 group-hover:-translate-y-1 group-hover:translate-x-0.5 transition-transform" />
         </div>
         <div className="flex items-center gap-3 flex-wrap group w-fit">
-          <SkillCard icon="/assets/icons/nextjs_ico.svg" name="Next JS"/>
-          <SkillCard icon="/assets/icons/react_ico.svg" name="React JS"/>
-          <SkillCard icon="/assets/icons/typescript_ico.svg" name="Typescript"/>
-          <SkillCard icon="/assets/icons/prisma_ico.svg" name="Prisma ORM"/>
-          <SkillCard icon="/assets/icons/javascript_ico.svg" name="Javascript"/>
-          <SkillCard icon="/assets/icons/tailwind_ico.svg" name="Tailwind CSS"/>
-          <SkillCard icon="/assets/icons/node_ico.svg" name="Node JS"/>
-          <SkillCard icon="/assets/icons/reactquery_ico.svg" name="React Query"/>
-          <SkillCard icon="/assets/icons/redis_ico.svg" name="Redis"/>
-          <SkillCard icon="/assets/icons/redux_ico.svg" name="Redux Toolkit"/>
-          <SkillCard icon="/assets/icons/postgres_ico.svg" name="Postgres SQL"/>
-          <SkillCard icon="/assets/icons/mongo_ico.svg" name="Mongo DB" />
-          <SkillCard icon="/assets/icons/docker_ico.svg" name="Docker" />
-          <SkillCard icon="/assets/icons/figma_ico.svg" name="Figma" />
-          <SkillCard icon="/assets/icons/aws_ico.svg" name="AWS" />
+          {
+             Skills.map(({icon ,name})=>(
+               <SkillCard icon={icon} name={name}/>
+             ))
+          }
         </div>
       </div>
 
