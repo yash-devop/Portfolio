@@ -71,7 +71,7 @@ export const ResumeDetails = [
         description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
     },
     {
-        duration: "Dec. 2023",
+        duration: "March. 2023",
         logo: "/assets/icons/slack.svg",
         title : "Frontend Developer",
         company: "Hackoverflow · Hackathon",
