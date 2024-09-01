@@ -2,6 +2,7 @@ import ShowcaseCard from "@/components/ShowcaseCard";
 import SkillCard from "@/components/SkillCard";
 import Heading from "@/components/ui/Heading";
 import H1 from "@/components/ui/Heading";
+import { Skills } from "@/constants";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 import { IBM_Plex_Serif } from "next/font/google";
@@ -12,68 +13,6 @@ const IBMPlexSerif = IBM_Plex_Serif({
   style: "italic"
 })
 
-const Skills = [
-  {
-     name: "Next JS",
-     icon: "/assets/icons/nextjs_ico.svg"
-  },
-  {
-     name: "React JS",
-     icon: "/assets/icons/react_ico.svg"
-  },
-  {
-     name: "Typescript",
-     icon: "/assets/icons/typescript_ico.svg"
-  },
-  {
-     name: "Prisma ORM",
-     icon: "/assets/icons/prisma_ico.svg"
-  },
-  {
-     name: "Javascript",
-     icon: "/assets/icons/javascript_ico.svg"
-  },
-  {
-     name: "Tailwind CSS",
-     icon: "/assets/icons/tailwind_ico.svg"
-  },
-  {
-     name: "Node JS",
-     icon: "/assets/icons/node_ico.svg"
-  },
-  {
-     name: "React Query",
-     icon: "/assets/icons/reactquery_ico.svg"
-  },
-  {
-     name: "Redis",
-     icon: "/assets/icons/redis_ico.svg"
-  },
-  {
-     name: "Redux Toolkit",
-     icon: "/assets/icons/redux_ico.svg"
-  },
-  {
-     name: "Postgres SQL",
-     icon: "/assets/icons/postgres_ico.svg"
-  },
-  {
-     name: "Mongo DB",
-     icon: "/assets/icons/mongo_ico.svg"
-  },
-  {
-     name: "Docker",
-     icon: "/assets/icons/docker_ico.svg"
-  },
-  {
-     name: "Figma",
-     icon: "/assets/icons/figma_ico.svg"
-  },
-  {
-     name: "AWS",
-     icon: "/assets/icons/aws_ico.svg"
-  },
-]
 
 export default function Home() {
   return (
