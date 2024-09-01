@@ -38,7 +38,7 @@ export default function Navbar() {
     });
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
-    
+
     useEffect(() => {
         if (isDesktopOrLaptop) {
             allowScroll();
@@ -51,7 +51,7 @@ export default function Navbar() {
 
     return (
         <>
-            <header className="border-b dark:border-secondary/10 w-full h-[60px] tracking-tighter fixed inset-0 z-10 bg-white">
+            <header className="border-b dark:border-secondary/10 w-full h-[60px] tracking-tighter">
                 <nav className="max-w-[800px] w-full mx-auto flex items-center justify-between h-full px-6 md:px-0">
                     <div className="flex gap-4 items-center h-full text-[15px] ">
                         <a href="/" className="">
@@ -64,9 +64,7 @@ export default function Navbar() {
                         </ul>
                     </div>
                     <div className="flex items-center gap-2">
-            <ThemeSwitch />
-
-                        
+                        <ThemeSwitch />
                         <div className="hidden md:block">
                             <AvailableToWork />
                         </div>
