@@ -8,7 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-       
+       colors:{
+          primary: {
+             DEFAULT: "#0F0F0F" 
+          },
+          primaryDark:{
+             DEFAULT: "#808080"
+          },
+          secondary:{
+            DEFAULT: "#5e646e",
+            dark: "rgb(212 212 216 / 0.7)"
+          },
+          secondaryDark:{
+            DEFAULT: "s"
+          }
+         
+       }
     },
   },
   plugins: [],
