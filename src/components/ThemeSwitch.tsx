@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react"
+import { flushSync } from "react-dom";
 
 export default function ThemeSwitch() {
     const [mounted, setMounted] = useState(false)
@@ -18,7 +19,12 @@ export default function ThemeSwitch() {
     }
 
     const toggleTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
+        document.startViewTransition(()=>{
+            flushSync(()=>{
+
+                setTheme(theme === "dark" ? "light" : "dark");
+            })
+        })
     };
 
     return (
