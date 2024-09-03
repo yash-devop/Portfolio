@@ -66,23 +66,32 @@ export const ResumeDetails = [
     {
         duration: "Dec. 2023 · Apr. 2024",
         logo: "/assets/icons/iitb_logo.png",
-        title : "Tech lead and Full Stack Developer",
+        title : "Full Stack Developer",
         company: "Indian Institute of Technology, Bombay · Internship",
-        description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
+        description: `As a Team Lead , I utilized the MongoDB ExpressJS ReactJS and NodeJS with state management libraries to build and manage dynamic web applications.
+        Also , I developed the User Interfaces in Figma and ReactJS, ensuring a seamless and visually appealing user experience for projects.`
     },
     {
         duration: "March. 2023",
         logo: "/assets/icons/slack.svg",
         title : "Frontend Developer",
         company: "Hackoverflow · Hackathon",
-        description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
+        description: `In a group of four, we created an AI-powered healthcare chatbot from scratch, utilizing Natural Language Processing (NLP) for effective user query understanding.
+
+        Implemented a user-friendly ReactJS frontend.
+        Led the development of a robust Django backend for the chatbot.
+        Seamlessly integrated image submission for enhanced chatbot recommendations, ensuring user-friendly accessibility.`
     },
     {
         duration: "Nov. 2023",
         logo: "/assets/icons/deepblue_ico.svg",
         title : "Frontend Developer",
         company: "Project Deep Blue S23 · Hackathon",
-        description: "As a Project Lead, my responsibility was to oversee and maintain all the codebase of one of Hypefury's core offerings. Typescript, Rust, Python were used in the infrastructure. We utilized NextJS with the “T-3 stack” - ensuring developer productivity as well as a bug-free typesafe codebase."
+        description: `Developed a meeting summarizer for regular as well as corporate users using ReactJS backed with Python ( Django Based ). Supports meetings in any language, providing real-time transcription functionality.
+
+        Efficiently captured and listed specific Action items from meeting discussions using the summarizer
+        application.
+        `
     },
 
 ]
