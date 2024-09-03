@@ -52,7 +52,7 @@ export default function Navbar() {
     return (
         <>
             <header className="border-b dark:border-secondary/10 w-full h-[60px] tracking-tighter">
-                <nav className="max-w-[800px] w-full mx-auto flex items-center justify-between h-full px-6 md:px-0">
+                <nav className="max-w-[825px] w-full mx-auto flex items-center justify-between h-full px-6 md:px-6">
                     <div className="flex gap-4 items-center h-full text-[15px] ">
                         <a href="/" className="">
                             <h1 className={`${cn(IBMPlexSerif.className)} font-medium`}>Yash Kamble .</h1>
