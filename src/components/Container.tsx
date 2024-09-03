@@ -5,7 +5,7 @@ export default function Container({
 }) {
     return (
         <>
-            <div className="max-w-[800px] w-full mx-auto px-6 md:px-0">
+            <div className="max-w-[825px] w-full mx-auto px-6 md:px-6">
                 {children}
             </div>
         </>

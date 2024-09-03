@@ -89,7 +89,7 @@ export default function Navbar() {
 
 function AvailableToWork() {
     return (
-        <div className="w-fit px-2 py-0.5 rounded-full border border-[#F0F0F0] flex items-center gap-1">
+        <div className="w-fit px-2 py-0.5 rounded-full border border-[#F0F0F0] dark:border-secondary/50 flex items-center gap-1">
             <div className="bg-green-500 rounded-full size-2 animate-pulse" />
             <span className="text-[12px]">Available for work</span>
         </div>
