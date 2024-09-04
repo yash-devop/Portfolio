@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/dom-view-transitions": "^1.0.5",
     "clsx": "^2.1.1",
     "lucide-react": "^0.436.0",
     "next": "14.2.7",
