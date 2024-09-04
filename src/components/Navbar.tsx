@@ -63,15 +63,19 @@ export default function Navbar() {
                             ))}
                         </ul>
                     </div>
-                    <div className="flex items-center gap-2">
+                    {/* <div className="flex items-center gap-2">
                         <ThemeSwitch />
                         <div className="hidden md:block">
                             <AvailableToWork />
                         </div>
-                    </div>
-                    <div className="flex md:hidden items-center gap-3">
-                        <div className="block sm:block md:hidden">
-                            <span onClick={() => setToggle((prev) => !prev)}>HAM</span>
+                    </div> */}
+                    <div className="flex items-center gap-3">
+                        <ThemeSwitch />
+                        <div className="flex">
+                            <div className="hidden md:block">
+                                <AvailableToWork />
+                            </div>
+                            <span className="block md:hidden" onClick={() => setToggle((prev) => !prev)}>HAM</span>
                         </div>
                     </div>
                 </nav>
