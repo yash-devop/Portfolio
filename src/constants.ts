@@ -20,12 +20,12 @@ export const Skills = [
        icon: "/assets/icons/javascript_ico.svg"
     },
     {
+      name: "Node JS",
+      icon: "/assets/icons/node_ico.svg"
+   },
+    {
        name: "Tailwind CSS",
        icon: "/assets/icons/tailwind_ico.svg"
-    },
-    {
-       name: "Node JS",
-       icon: "/assets/icons/node_ico.svg"
     },
     {
        name: "React Query",
@@ -44,21 +44,21 @@ export const Skills = [
        icon: "/assets/icons/postgres_ico.svg"
     },
     {
+      name: "Figma",
+      icon: "/assets/icons/figma_ico.svg"
+   },
+    {
        name: "Mongo DB",
        icon: "/assets/icons/mongo_ico.svg"
-    },
-    {
-       name: "Docker",
-       icon: "/assets/icons/docker_ico.svg"
-    },
-    {
-       name: "Figma",
-       icon: "/assets/icons/figma_ico.svg"
     },
     {
        name: "AWS",
        icon: "/assets/icons/aws_ico.svg"
     },
+    {
+      name: "Docker",
+      icon: "/assets/icons/docker_ico.svg"
+   },
 ];
 
 
