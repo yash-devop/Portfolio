@@ -6,9 +6,9 @@ export default function Page() {
     return (
         <>
             <div className="pt-20">
-                <Heading>Let's connect ?</Heading>
+                <Heading>Let&apos;s connect ?</Heading>
                 <p className="py-4">
-                    I'm excited to connect with others via email <a target="_blank" rel="noopener noreferrer" href="mailto:yashkamble.dev@gmail.com" className="text-blue-500 underline underline-offset-4"> (yashkamble.dev@gmail.com)</a> and <a href="https://x.com/yash_devop" className="text-blue-500 underline underline-offset-4">Twitter</a> to chat about projects and ideas. Ready to take freelance projects, and also open to hear about potential opportunities, discussing them with you and then potentially collaborating if it's a good fit.
+                    I&apos;m excited to connect with others via email <a target="_blank" rel="noopener noreferrer" href="mailto:yashkamble.dev@gmail.com" className="text-blue-500 underline underline-offset-4"> (yashkamble.dev@gmail.com)</a> and <a href="https://x.com/yash_devop" className="text-blue-500 underline underline-offset-4">Twitter</a> to chat about projects and ideas. Ready to take freelance projects, and also open to hear about potential opportunities, discussing them with you and then potentially collaborating if it&apos;s a good fit.
                 </p>
 
                 <div className="pt-10 flex items-center flex-wrap gap-3">
