@@ -19,6 +19,13 @@ const Projects = [
         description: "Club.sh , is an URL Shortener with steroids with real-time analytics and link management infra.",
         websiteLink: ""
     },
+    {
+        title: "Club.sh",
+        stack: ["NextJS","AWS","Tailwind","React Query",],
+        githubLink:"https://github.com/club_sh",
+        description: "Club.sh , is an URL Shortener with steroids with real-time analytics and link management infra.",
+        websiteLink: ""
+    },
 ]
 
 const Skeleton=({
@@ -55,7 +62,7 @@ export default function ProjectsPage() {
     }
     return (
         <>
-            <div className="py-10 flex gap-3 items-center">
+            <div className="py-10 flex flex-wrap gap-3 items-center">
                 {
                      Projects.map(({description , githubLink , stack , title , websiteLink})=>(
                         <ProjectCard 
