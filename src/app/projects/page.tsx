@@ -7,21 +7,21 @@ import { useTheme } from "next-themes";
 const Projects = [
     {
         title: "Club.sh",
-        stack: ["NextJS","AWS","Tailwind","React Query",],
+        stack: ["NextJS","AWS","Tailwind","React Query", "Redis", "Postgres"],
         githubLink:"https://github.com/yash-devop/club.sh",
         description: "Club.sh , is an URL Shortener with steroids with real-time analytics and link management infra.",
         websiteLink: "https://club.yashstack.com/"
     },
     {
         title: "Bloggen",
-        stack: ["NextJS","AWS","Tailwind","React Query",],
+        stack: ["NextJS", "Typescript", "Docker", "Postgres", "Github API", "Webhooks"],
         githubLink:"https://github.com/yash-devop/bloggen",
         description: "Bloggen - Turn your github repository issues into beautiful blog.",
         websiteLink: "https://bloggen.yashstack.com/"
     },
     {
-        title: "Control",
-        stack: ["NextJS","AWS","Tailwind","React Query",],
+        title: "Control - Website uptime monitor",
+        stack: ["AWS", "NextJS", "Typescript", "Docker", "Postgres", "Redis", "BullMQ Queues"],
         githubLink:"https://github.com/yash-devop/website-uptime-monitor",
         description: "Control - Monitor website uptime, downtime, performance, and ensure reliability effortlessly",
         websiteLink: ""
@@ -39,6 +39,13 @@ const Projects = [
         githubLink:"https://github.com/yash-devop/MERN-Blog",
         description: "Blogify - MERN STACK Blog website",
         websiteLink: "https://blogifyv1.vercel.app/"
+    },
+    {
+        title: "Freelance Work",
+        stack: ["ReactJS", "Tailwind", "Google API"],
+        githubLink:"https://drive.google.com/drive/u/1/folders/1V04lZ4ABOsOEkAhDnCjrHtiIJAMi9Rm-",
+        description: "All my freelance work / project images",
+        websiteLink: "https://drive.google.com/drive/u/1/folders/1V04lZ4ABOsOEkAhDnCjrHtiIJAMi9Rm-"
     },
     {
         title: "Ditto Google Search",
