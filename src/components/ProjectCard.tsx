@@ -1,68 +1,65 @@
-"use client"
-import { Lock } from "lucide-react";
-import { useTheme } from "next-themes";
+"use client";
+import { ArrowRight} from "lucide-react";
 import Link from "next/link";
 
+type ProjectType = {
+  title: string;
+  description: string;
+  stack: string[];
+  githubLink: string;
+  websiteLink: string;
+  theme: string;
+};
 
-const Badge = ({
-    name
-}: {
-    name: string
-}) => {
-    return (
-        <>
-            <div className="rounded-full py-0.5 px-2 border border-[#DDDDDD] dark:border-secondary/35 text-[#A0A0A0] bg-[#F4F3F3] dark:bg-[#2B2B2B] text-xs w-fit h-fit">
-                {name}
+const Badge = ({ str }: { str: string }) => {
+  return (
+    <>
+      <span className="px-2 rounded-md text-xs py-0.5 border border-neutral-300 dark:border-primaryDark/20">
+        {str}
+      </span>
+    </>
+  );
+};
+export default function ProjectCard({ githubLink, description , stack, title,websiteLink }: ProjectType) {
+  return (
+    <>
+      <Link
+        href={websiteLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="min-h-[150px] flex flex-col h-full w-full rounded-3xl p-6 border border-secondary/15 bg-secondary/5 dark:border-secondary/35 overflow-hidden tracking-tighter"
+      >
+        <div className=" text-sm text-[#6e6e6e] dark:text-[#D4D4D4]/70 w-full flex-grow flex flex-col gap-4">
+          <div className="flex flex-col justify-between flex-wrap gap-3">
+            <h1 className="text-xl text-[#000000] font-semibold dark:text-white">
+              {title}
+            </h1>
+            <div className="flex flex-wrap text-sm gap-x-2 gap-y-1 md:gap-y-2">
+                {
+                    stack.map((skill)=>(
+                        <Badge str={skill}/>
+                    ))
+                }
             </div>
-        </>
-    )
-}
-
-export default function ProjectCard({
-    title = "Project",
-    description,
-    stack,
-    githubLink,
-    websiteLink,
-    theme
-}: {
-    title: string,
-    description: string
-    stack: string[],
-    githubLink: string,
-    websiteLink: string,
-    theme:string
-}) {
-    return (
-        <>
-            <div className="h-[250px] w-[380px] rounded-3xl p-6 border border-secondary/15 bg-secondary/5 dark:border-secondary/35 overflow-hidden relative tracking-tighter">
-                <Link href={websiteLink}>
-                    {
-                        theme === "light" ? <img src="/assets/icons/bg_lines.svg" className="absolute inset-0 w-full z-[-1]" /> : <img src="/assets/icons/bg_lines_black.svg" className="absolute inset-0 w-full z-[-1]" />
-                    }
-                    <div className="z-10 space-y-2 flex items-start justify-between gap-10 w-full h-fit">
-                        <div className="flex flex-col gap-2 w-fusll">
-                            <div className="bg-[#2B2B2B] text-white rounded-xl w-14 h-12 flex items-center justify-center border dark:border-secondary/10">
-                                <Lock />
-                            </div>
-                            <p className="text-[#2B2B2B] font-medium text-2xl dark:text-[#D6D6D6]">Club.sh</p>
-                        </div>
-                        <div className="flex flex-wrap  gap-2 leading-3">
-                            {
-                                stack.map((skill) => (
-                                    <Badge name={skill} />
-                                ))
-                            }
-                        </div>
-                    </div>
-                    <div className="max-w-xs py-4 text-sm text-[#6e6e6e] dark:text-[#D4D4D4]/70">
-                        <p className="">{description}</p>
-                    </div>
-                    <div className="rounded-tr-none rounded-tl-none rounded-3xl absolute bottom-0 left-0 right-0 w-full px-6 py-3 bg-white dark:bg-[#2B2B2B]">
-                        <a href={githubLink} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 cursor-pointer text-sm dark:text-[#6e6e6e]">view github</a>
-                    </div>
-                </Link>
-            </div>
-        </>
-    )
+          </div>
+        </div>
+        <p className="text-base pt-8 pb-4 text-[#6e6e6e] dark:text-[#D4D4D4]/70">
+          {description}
+        </p>
+        <div className="flex flex-col ">
+          <div className="flex gap-2 w-fit">
+            <Link
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 cursor-pointer text-sm dark:text-[#6e6e6e] flex items-center gap-2"
+            >
+              view github
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </Link>
+    </>
+  );
 }

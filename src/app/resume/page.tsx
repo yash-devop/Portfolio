@@ -9,8 +9,8 @@ export default function Resume(){
                 <Heading>Resume</Heading>
                 <div className="px-8 py-16">
                     {
-                        ResumeDetails.map(({company,description,duration,title,logo},idx)=>(
-                            <Timeline key={idx} length={ResumeDetails.length} idx={idx} company={company} description={description} duration={duration} title={title} logo={logo}/>
+                        ResumeDetails.map(({company,description,duration,title,Icon},idx)=>(
+                            <Timeline key={idx} length={ResumeDetails.length} idx={idx} company={company} description={description} duration={duration} title={title} Icon={Icon}/>
                         ))
                     }
                 </div>

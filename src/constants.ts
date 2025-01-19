@@ -1,3 +1,5 @@
+import { TimelineProps } from "./app/resume/(component)/Timeline";
+
 export const Skills = [
     {
        name: "Next JS",
@@ -65,15 +67,15 @@ export const Skills = [
 export const ResumeDetails = [
     {
         duration: "Dec. 2023 · Apr. 2024",
-        logo: "/assets/icons/iitb_logo.png",
+        Icon: "/assets/icons/iitb_logo.png",
         title : "Full Stack Developer",
         company: "Indian Institute of Technology, Bombay · Internship",
         description: `As a Team Lead , I utilized the MongoDB ExpressJS ReactJS and NodeJS with state management libraries to build and manage dynamic web applications.
-        Also , I developed the User Interfaces in Figma and ReactJS, ensuring a seamless and visually appealing user experience for projects.`
+        Also , I developed the User Interfaces in Figma and ReactJS, ensuring a seamless and visually appealing user experience for projects.`,
     },
     {
         duration: "March. 2023",
-        logo: "/assets/icons/slack.svg",
+        Icon: "/assets/icons/slack.svg",
         title : "Frontend Developer",
         company: "Hackoverflow · Hackathon",
         description: `In a group of four, we created an AI-powered healthcare chatbot from scratch, utilizing Natural Language Processing (NLP) for effective user query understanding.
@@ -84,7 +86,7 @@ export const ResumeDetails = [
     },
     {
         duration: "Nov. 2023",
-        logo: "/assets/icons/deepblue_ico.svg",
+        Icon: "/assets/icons/deepblue_ico.svg",
         title : "Frontend Developer",
         company: "Project Deep Blue S23 · Hackathon",
         description: `Developed a meeting summarizer for regular as well as corporate users using ReactJS backed with Python ( Django Based ). Supports meetings in any language, providing real-time transcription functionality.

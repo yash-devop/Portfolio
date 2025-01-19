@@ -6,7 +6,15 @@ import Image from "next/image"
 import Link from "next/link"
 import { useRef, useState } from "react"
 
-export default function ShowcaseCard() {
+
+type ShowcaseType = {
+    id: number,
+    image: string,
+    href: string,
+    className?: string
+}
+
+export default function ShowcaseCard({id,href,image, className}:ShowcaseType) {
     const containerRef = useRef<HTMLDivElement>(null)
     const mousePosition = useMousePosition(containerRef, 500, 300)
     const [display, setDisplay] = useState<string>("none")
@@ -14,18 +22,19 @@ export default function ShowcaseCard() {
 
     return (
         <div
+         key={id}
             ref={containerRef}
-            className="w-full h-[500px] bg-gray-100 relative overflow-hiddens cursor-pointer flex items-center justify-center"
+            className="w-full relative overflow-hidden cursor-pointer flex items-center justify-center"
             onMouseLeave={() => setDisplay("none")}
             onMouseEnter={() => setDisplay("block")}
         >
-            <Link href={"/newroute"}>
+            <Link key={id} href={href} className={className}>
                 <Image
                     alt="project1"
-                    src={"/assets/project1.png"}
-                    width={800}
-                    height={800}
-                    className="object-fill"
+                    src={image}
+                    width={850}
+                    height={850}
+                    className="object-cover aspect-auto"
                 />
                 {mousePosition && (
                     <div
