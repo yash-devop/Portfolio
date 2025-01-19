@@ -18,13 +18,13 @@ const IBMPlexSerif = IBM_Plex_Serif({
 const showcase = [
   {
     id: 1,
-    href: "/",
+    href: "/projects",
     image: "/assets/project1.png",
   },
   {
     id: 2,
-    href: "/",
-    image: "/assets/project1.png",
+    href: "/projects",
+    image: "/assets/project2.png",
   },
 ];
 
