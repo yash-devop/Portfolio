@@ -74,9 +74,9 @@ const Skeleton=({
             {
                 Array.from({
                     length
-                }).map((_)=>(
+                }).map((_, idx)=>(
 
-                <div className="min-h-[180px] w-full rounded-3xl p-6  bg-secondary/15 overflow-hidden relative tracking-tighter animate-pulse" />
+                <div key={idx} className="min-h-[180px] w-full rounded-3xl p-6  bg-secondary/15 overflow-hidden relative tracking-tighter animate-pulse" />
                 ))
             }
         </>
@@ -99,8 +99,9 @@ export default function ProjectsPage() {
         <>
             <div className="py-10 flex flex-col gap-5 items-center">
                 {
-                     Projects.map(({description , githubLink , stack , title , websiteLink})=>(
+                     Projects.map(({description , githubLink , stack , title , websiteLink},idx)=>(
                         <ProjectCard 
+                        key={idx}
                             description={description}
                             githubLink={githubLink}
                             stack={stack}

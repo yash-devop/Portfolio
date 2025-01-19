@@ -86,8 +86,8 @@ export default function Home() {
           <div className="pt-10 pb-8 grid grid-cols-1 gap-8">
             {showcase ? (
               <>
-                {showcase.map((data) => (
-                  <ShowcaseCard {...data} />
+                {showcase.map((data , idx) => (
+                  <ShowcaseCard {...data} key={idx}/>
                 ))}
                 <div className="flex items-center w-full justify-center py-6">
                   <Link href={"/projects"} className="py-2 w-fit px-5 border border-primaryDark/40 hover:dark:bg-white hover:dark:text-black transition-all hover:bg-primaryDark hover:text-white dark:border-primaryDark/10 rounded-lg">

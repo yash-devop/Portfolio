@@ -36,8 +36,8 @@ export default function ProjectCard({ githubLink, description , stack, title,web
             </h1>
             <div className="flex flex-wrap text-sm gap-x-2 gap-y-1 md:gap-y-2">
                 {
-                    stack.map((skill)=>(
-                        <Badge str={skill}/>
+                    stack.map((skill,idx)=>(
+                        <Badge str={skill} key={idx}/>
                     ))
                 }
             </div>
