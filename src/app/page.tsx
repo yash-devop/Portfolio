@@ -26,6 +26,11 @@ const showcase = [
     href: "/projects",
     image: "/assets/project2.png",
   },
+  {
+    id: 2,
+    href: "/projects",
+    image: "/assets/project3.png",
+  },
 ];
 
 export default function Home() {
@@ -64,7 +69,7 @@ export default function Home() {
             <Link
               target="_blank"
               href={
-                "https://drive.google.com/file/d/1qzrjpqz7A0SmEYhsrpMYpS46_tdUD1UK/view?usp=drive_link"
+                "https://drive.google.com/file/d/1BLzOtWhA80F2IgVg6TboMw9P3p4aRFmS/view?usp=drive_link"
               }
               className="flex items-center group w-fit pb-6"
             >

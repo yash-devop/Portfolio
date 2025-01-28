@@ -1,7 +1,8 @@
 
 import { cn } from "@/lib/utils";
-import { LucideProps } from "lucide-react";
+import { ArrowRight, LucideProps } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export interface TimelineProps {
@@ -11,6 +12,7 @@ export interface TimelineProps {
   company: string;
   description: string;
   length: number;
+  link?: string;
   idx: number;
 }
 
@@ -42,6 +44,8 @@ export const TimelineContent = ({
   duration,
   length,
   idx,
+  link
+
 }: TimelineProps) => {
   return (
     <>
@@ -56,7 +60,12 @@ export const TimelineContent = ({
         <h2 className="py-2 text-primary dark:text-white font-semibold">
           {title}
         </h2>
-        <h4 className="pb-2 dark:text-white">{company}</h4>
+        <div className="flex items-center group">
+          <Link href={link ?? ""} className="pb-2 dark:text-white">{company}</Link>
+          {
+            link && <ArrowRight size={12} className="-rotate-45 -translate-y-4 group-hover:-translate-y-5 group-hover:translate-x-1 transition-all"/>
+          }
+        </div>
         <p className="max-w-2xl text-wrap text-secondary dark:text-secondary-dark">
           {description}
         </p>

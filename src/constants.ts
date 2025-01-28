@@ -1,5 +1,3 @@
-import { TimelineProps } from "./app/resume/(component)/Timeline";
-
 export const Skills = [
     {
        name: "Next JS",
@@ -66,12 +64,39 @@ export const Skills = [
 
 export const ResumeDetails = [
     {
+        Icon: "/assets/icons/freelance-black.png",
+        title : "Frontend Developer",
+        company: "iVOOMi Intex",
+        description: `Developed and maintain the user-facing website for an electric scooter brand, which has increased online visibility and user engagement by 30%. I also collaborate closely with designers and stakeholders to turn requirements into visually appealing, user-friendly web pages, ensuring high client satisfaction.`,
+        link: "https://ivoomienergy.com/"
+      
+      },
+    {
+        Icon: "/assets/icons/freelance-black.png",
+        title : "FullStack Developer",
+        company: "TrufflePig.ai",
+        description: `Developed a PDF summarizer with page citations for TV planning using Next.js, streamlining content extraction and also integrated the TrufflePig’s AI model with a custom backend built using Next.js, Zustand, and React Query, while collaborating on UI design in Figma. This setup enhances summarization accuracy and enables real-time processing.`,
+        link: "https://www.linkedin.com/company/trufflepig-ai/"
+        
+      },
+    {
+        Icon: "/assets/icons/freelance-black.png",
+        title : "Frontend Developer",
+        company: "Whatsapp Assistant",
+        description: `Developed an end-to-end frontend using React and other libraries, integrating the WhatsApp API and a custom
+        AI model to read messages, categorize them, and send automated responses to users on WhatsApp based on their
+        activity`,
+        link: "https://drive.google.com/drive/u/1/folders/1CwvhEoutB0WBKh0RqWVMoAK3EvDnZG0V"
+
+    },
+    {
         duration: "Dec. 2023 · Apr. 2024",
         Icon: "/assets/icons/iitb_logo.png",
         title : "Full Stack Developer",
         company: "Indian Institute of Technology, Bombay · Internship",
         description: `As a Team Lead , I utilized the MongoDB ExpressJS ReactJS and NodeJS with state management libraries to build and manage dynamic web applications.
         Also , I developed the User Interfaces in Figma and ReactJS, ensuring a seamless and visually appealing user experience for projects.`,
+        link: "https://www.nanobioslab.com/"
     },
     {
         duration: "March. 2023",
@@ -82,7 +107,8 @@ export const ResumeDetails = [
 
         Implemented a user-friendly ReactJS frontend.
         Led the development of a robust Django backend for the chatbot.
-        Seamlessly integrated image submission for enhanced chatbot recommendations, ensuring user-friendly accessibility.`
+        Seamlessly integrated image submission for enhanced chatbot recommendations, ensuring user-friendly accessibility.`,
+
     },
     {
         duration: "Nov. 2023",
@@ -90,10 +116,9 @@ export const ResumeDetails = [
         title : "Frontend Developer",
         company: "Project Deep Blue S23 · Hackathon",
         description: `Developed a meeting summarizer for regular as well as corporate users using ReactJS backed with Python ( Django Based ). Supports meetings in any language, providing real-time transcription functionality.
-
         Efficiently captured and listed specific Action items from meeting discussions using the summarizer
         application.
-        `
+        `,
     },
 
 ]

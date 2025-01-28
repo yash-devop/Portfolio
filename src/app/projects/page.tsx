@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 const Projects = [
     {
         title: "Club.sh",
-        stack: ["NextJS","AWS","Tailwind","React Query", "Redis", "Postgres"],
+        stack: ["NextJS","AWS","Tailwind","Monorepos","React Query", "Redis", "Postgres"],
         githubLink:"https://github.com/yash-devop/club.sh",
         description: "Club.sh , is an URL Shortener with steroids with real-time analytics and link management infra.",
         websiteLink: "https://club.yashstack.com/"
@@ -21,10 +21,10 @@ const Projects = [
     },
     {
         title: "Control - Website uptime monitor",
-        stack: ["AWS", "NextJS", "Typescript", "Docker", "Postgres", "Redis", "BullMQ Queues"],
+        stack: ["AWS", "NextJS", "Typescript", "Monorepos","Docker", "Postgres", "Redis", "BullMQ Queues"],
         githubLink:"https://github.com/yash-devop/website-uptime-monitor",
         description: "Control - Monitor website uptime, downtime, performance, and ensure reliability effortlessly",
-        websiteLink: ""
+        websiteLink: "https://www.loom.com/share/6d15862e541941e8ad12b3f3b8bb940e?sid=ccbdc431-dde8-49a7-9472-c12dc85d1389"
     },
     {
         title: "Blinkchat",
